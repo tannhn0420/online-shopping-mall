@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bdb90576-0b19-4f87-aaed-809f99e059c6" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Untitled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shoppingmall/.idea/libraries/Maven__com_nattahn_shoppingmallbackend_0_0_1_SNAPSHOT.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
@@ -14,10 +15,20 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shoppingmallbackend.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/nattahn/shoppingmallbackend/dao/CategoryDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/nattahn/shoppingmallbackend/dao/impl/CategoryDAOImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/nattahn/shoppingmallbackend/dto/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/.idea/artifacts/shoppingmall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/.idea/artifacts/shoppingmall_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/shoppingmall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/shoppingmall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/src/main/java/com/nattahn/shoppingmall/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/src/main/java/com/nattahn/shoppingmall/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingmall/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingmall/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622151698135</updated>
-      <workItem from="1622151699381" duration="1001000" />
+      <workItem from="1622151699381" duration="2155000" />
     </task>
     <servers />
   </component>
