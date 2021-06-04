@@ -37,6 +37,9 @@
  <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 
+
+
+
 <!-- Custom CSS -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">
 
@@ -76,10 +79,13 @@
 		<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true  }">
 			<%@include file="listProducts.jsp"%>
 		</c:if>
-		
 		<!-- Loading only when user click show product -->
 		<c:if test="${userClickShowProduct == true}">
 			<%@include file="singleProduct.jsp"%>
+		</c:if>
+		<!-- Loading only when user click manage product -->
+		<c:if test="${userClickManageProducts == true}">
+			<%@include file="manageProduct.jsp"%>
 		</c:if>
 	</div>
 	
@@ -90,6 +96,10 @@
 
 	<!-- jQuery -->
 	<script src="${js}/jquery.js"></script>
+	
+	<!-- jQuery validator -->
+	<script src="${js}/jquery.validate.js"></script>
+	
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="${js}/bootstrap.min.js"></script>
@@ -99,6 +109,9 @@
 
 	<!-- DataTables Bootstrap Script  -->
 	<script src="${js}/dataTables.bootstrap.js"></script>
+	
+	<!-- Bootbox -->
+ 	<script src="${js}/bootbox.min.js" rel="stylesheet"></script>
 	
 	<!-- Self coded javascript -->
 	<script src="${js}/myapp.js"></script>
