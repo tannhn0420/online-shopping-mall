@@ -43,9 +43,9 @@ CREATE TABLE product (
 -- the address table to store the user billing and shipping addresses
 CREATE TABLE address (
 	id IDENTITY,
-	user_id int,
-	address_line_one VARCHAR(100),
-	address_line_two VARCHAR(100),
+	une VARCHAR(100),
+	address_line_two ser_id int,
+	address_line_oVARCHAR(100),
 	city VARCHAR(20),
 	state VARCHAR(20),
 	country VARCHAR(20),

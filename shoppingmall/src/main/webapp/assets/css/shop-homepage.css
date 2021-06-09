@@ -163,7 +163,10 @@ input:checked + .slider:before {
 	color: #ff0000;
 }
 
-
+.table-responsive{
+	overflow-x: inherit;
+	
+}
 
 
 

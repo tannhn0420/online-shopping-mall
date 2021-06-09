@@ -27,11 +27,12 @@ public class HibernateConfig {
 	
 	
 	//dataSource bean will be available
-	@Bean
+	@Bean("dataSource")
 	public DataSource getDataSource() {
 		
 		//Providing the database connection information
 		BasicDataSource dataSource = new BasicDataSource();
+		
 		dataSource.setDriverClassName(DATABASE_DRIVER);
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
