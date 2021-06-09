@@ -42,17 +42,7 @@ public class UserDAOImpl implements UserDAO {
 		
 	}
 
-	@Override
-	public boolean updateCart(Cart cart) {
-		try {
-			sessionFactory.getCurrentSession().update(cart);
-			return true;
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			return false;
-		}
-	}
+	
 
 	@Override
 	public User getByEmail(String email) {
@@ -112,6 +102,23 @@ public class UserDAOImpl implements UserDAO {
 					e.printStackTrace();
 					return null;
 				}
+	}
+
+	@Override
+	public Address getAddress(int addressId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Address updateAddress(Address addressId) {
+		try {			
+			return sessionFactory.getCurrentSession().get(Address.class, addressId);			
+		}
+		catch(Exception ex) {
+			System.out.println(ex.getMessage());
+			return null;
+		}
 	}
 	
 }

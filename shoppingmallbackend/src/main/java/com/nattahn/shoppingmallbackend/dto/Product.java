@@ -33,7 +33,7 @@ public class Product {
 	@Min(value = 1 , message = "The price cannot be less than 1")
 	@Column(name = "unit_price")
 	private double unitPrice;
-	private double quantity; 
+	private int quantity; 
 	@Column(name = "is_active")
 	private boolean active;
 	
@@ -100,10 +100,10 @@ public class Product {
 	public void setUnitPrice(double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
-	public double getQuantity() {
+	public int getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(double quantity) {
+	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 	public boolean isActive() {

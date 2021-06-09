@@ -39,6 +39,7 @@ public class Cart implements Serializable {
 
 	@Column(name = "grand_total")
 	private double grandTotal;
+	
 	@Column(name = "cart_lines")
 	private int cartLines;
 	
