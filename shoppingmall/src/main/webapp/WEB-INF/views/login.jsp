@@ -137,7 +137,7 @@
 							
 							<div class="panel-footer">
 								<div class="text-right"><b>New User - 
-								<a href="${pageContext}/register">Register Here</a></b></div>
+								<a href="${contextRoot}/register">Register Here</a></b></div>
 							</div>
 						
 						</div>

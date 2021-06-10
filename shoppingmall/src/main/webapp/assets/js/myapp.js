@@ -1,6 +1,12 @@
 /**
  * 
- */
+ */	
+ // for adding a loader
+	$(window).load(function(){
+		setTimeout(function() {
+			$(".se-pre-con").fadeOut("slow");
+		}, 250);			
+	});	
 
 
 
@@ -71,7 +77,7 @@ $(function(){
 		
 		$table.DataTable({
 			lengthMenu: [[3,5,10,-1],['3 Records','5 Records','10 Records','ALL']],	
-			pageLength: 3,
+			pageLength: 5,
 			ajax: {
 				url : jsonUrl,
 				dataSrc : ''
@@ -119,7 +125,7 @@ $(function(){
 					bSortable : false,
 					mRender: function(data,type,row){
 						var str = '';
-						str += '<a class="btn btn-primary" href="'+ window.contextRoot + '/show/' + data + '/product"> <span class="glyphicon glyphicon-eye-open"></span></a> &#160';
+						str += '<a class="btn btn-primary" style="margin-top:0px;" href="'+ window.contextRoot + '/show/' + data + '/product"> <span class="glyphicon glyphicon-eye-open"></span></a> &#160';
 						
 						
 						if(userRole == 'ADMIN'){
@@ -179,7 +185,7 @@ $(function(){
 		
 		$adminProductsTable.DataTable({
 			lengthMenu: [[10,30,50,-1],['10 Records','30 Records','50 Records','ALL']],	
-			pageLength: 30,
+			pageLength: 10,
 			ajax: {
 				url : jsonUrl,
 				dataSrc : ''

@@ -1,5 +1,7 @@
 package com.nattahn.shoppingmall.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,16 +11,23 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.nattahn.shoppingmall.service.CartService;
 
+
+
 @Controller
 @RequestMapping("/cart")
 public class CartController {
+	
+	private final static Logger logger = LoggerFactory.getLogger(CartController.class);
 	
 	@Autowired 
 	private CartService cartService;
 	
 	@RequestMapping("/show")
 	public ModelAndView showCart(@RequestParam(name = "result", required = false) String result) {
+		
 		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Shopping Cart");
+		mv.addObject("userClickShowCart", true);
 		
 		if(result != null) {
 			switch (result) {
@@ -66,7 +75,7 @@ public class CartController {
 	
 	
 	@RequestMapping("/{cartLineId}/update")
-	public String updateCart(@PathVariable int cartLineId, @RequestParam int count) {
+	public String updateCartLine(@PathVariable int cartLineId, @RequestParam int count) {
 		
 		String response = cartService.manageCartLine(cartLineId,count);
 		
@@ -86,7 +95,7 @@ public class CartController {
 	
 	
 	@RequestMapping("/add/{productId}/product")
-	public String addCart(@PathVariable int productId) {
+	public String addCartLine(@PathVariable int productId) {
 		
 		String response = cartService.addCartLine(productId);
 		
